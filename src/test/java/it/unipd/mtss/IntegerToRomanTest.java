@@ -82,5 +82,21 @@ public class IntegerToRomanTest {
         assertEquals(IntegerToRoman.convert(50), "L");
         assertEquals(IntegerToRoman.convert(100), "C");
         assertEquals(IntegerToRoman.convert(500), "D");
+        assertEquals(IntegerToRoman.convert(1000), "M");
     }
+
+    @Test
+    public void MediumNumberConversion() {
+    assertEquals(IntegerToRoman.convert(40), "XL");
+    assertEquals(IntegerToRoman.convert(90), "XC");
+    assertEquals(IntegerToRoman.convert(400), "CD");
+    assertEquals(IntegerToRoman.convert(900), "CM");
+}
+
+    //numero romano più lungo nell'intervallo 1-1000
+    @Test
+    public void LongestRomanNumberTill1000() {
+    assertEquals(IntegerToRoman.convert(888), "DCCCLXXXVIII");
+    }
+    
 }
