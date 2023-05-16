@@ -20,8 +20,8 @@ public class IntegerToRoman {
   
   public static String convert(int number){
 
-    if (number < 1 || number > 10) {
-      throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 10.");
+    if (number < 1 || number > 20) {
+      throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 20.");
     }
     
     StringBuilder romanNumber = new StringBuilder();
