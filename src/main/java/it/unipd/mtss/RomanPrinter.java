@@ -16,13 +16,15 @@ public class RomanPrinter {
         char c = romanNumber.charAt(i);
         switch(c) {
           case 'I':
-              result.append("***\n");
-              result.append(" * \n");
-              result.append(" * \n");
-              result.append(" * \n");
-              result.append("***\n");
-              result.append("\n");
-            break;
+
+            result.append("***\n");
+            result.append(" * \n");
+            result.append(" * \n");
+            result.append(" * \n");
+            result.append("***\n");
+            result.append("\n");
+          break;
+
           case 'V':
             result.append("*        *\n");
             result.append(" *      * \n");
@@ -31,6 +33,16 @@ public class RomanPrinter {
             result.append("     *    \n");
             result.append(" \n");
           break;
+
+          case 'X':
+            result.append("*    * \n");
+            result.append(" *  * \n");
+            result.append("  *   \n");
+            result.append(" *  * \n");
+            result.append("*    *\n");
+            result.append(" \n");
+          break;
+
           default:
             throw new IllegalArgumentException("Invalid Roman numeral: " + c);
         }
