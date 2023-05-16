@@ -75,7 +75,7 @@ public class IntegerToRomanTest {
         assertEquals(IntegerToRoman.convert(489), "CDLXXXIX");
     }
 
-    //numeri con una sola lettera fino a 10
+    //numeri con una sola lettera fino a 500
     @Test
     public void OneLetterNumbers() {
         assertEquals(IntegerToRoman.convert(10), "X");
