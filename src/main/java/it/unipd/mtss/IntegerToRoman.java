@@ -10,6 +10,7 @@ public class IntegerToRoman {
   // Map che associa i numeri arabi ai corrispondenti numeri romani
   private static final TreeMap<Integer, String> ROMAN_NUMERALS_MAP = new TreeMap<>();
   static {
+
     ROMAN_NUMERALS_MAP.put(10, "X");
     ROMAN_NUMERALS_MAP.put(9, "IX");
     ROMAN_NUMERALS_MAP.put(5, "V");
@@ -18,6 +19,7 @@ public class IntegerToRoman {
   }
   
   public static String convert(int number){
+
     if (number < 1 || number > 10) {
       throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 10.");
     }
